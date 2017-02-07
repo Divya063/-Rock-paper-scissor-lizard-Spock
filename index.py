@@ -44,3 +44,51 @@ def number_to_name(number):
         return "scissors"
     else:
         print 'error'
+    # convert number to a name using if/elif/else
+    # don't forget to return the result!
+    
+import random
+def rpsls(player_choice): 
+    # delete the following pass statement and fill in your code below
+    
+    
+    # print a blank line to separate consecutive games
+    print " "
+    print "player chooses"+" "+player_choice
+    player_number=name_to_number(player_choice)
+    comp_number=random.randrange(0,5)
+    comp_choice=number_to_name(comp_number)
+    print "computer chooses"+" "+comp_choice
+    diff=(comp_number-player_number)%5
+    if(diff==1 or diff==2):
+        print "computer wins"
+    elif(diff==3 or diff==4):
+        print "player wins"
+    else:
+        print "tie"
+     
+    
+    
+    # print out the message for the player's choice
+
+    # convert the player's choice to player_number using the function name_to_number()
+
+    # compute random guess for comp_number using random.randrange()
+
+    # convert comp_number to comp_choice using the function number_to_name()
+    
+    # print out the message for computer's choice
+
+    # compute difference of comp_number and player_number modulo five
+
+    # use if/elif/else to determine winner, print winner message
+
+    
+# test your code - THESE CALLS MUST BE PRESENT IN YOUR SUBMITTED CODE
+rpsls("rock")
+rpsls("Spock")
+rpsls("paper")
+rpsls("lizard")
+rpsls("scissors")
+
+
