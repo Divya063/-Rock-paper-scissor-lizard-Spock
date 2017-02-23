@@ -18,3 +18,4 @@ The game is an expansion on the game Rock, Paper, Scissors. Each player picks a 
 <li>(and as it always has) Rock crushes Scissors</li>
 </ul>
 </div>
+*rock
